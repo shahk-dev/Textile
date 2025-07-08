@@ -1,0 +1,34 @@
+{
+  "Navigation": {
+    "home": "Bosh sahifa",
+    "about": "Biz haqimizda",
+    "services": "Xizmatlar",
+    "contact": "Aloqa"
+  },
+  "HomePage": {
+    "title": "Biznes kompaniyasiga xush kelibsiz",
+    "description": "Biz sizning biznesingizni rivojlantirishda yordam beramiz",
+    "cta": "Biz bilan bog'laning"
+  },
+  "AboutPage": {
+    "title": "Biz haqimizda",
+    "description": "Bizning kompaniyamiz 2020 yilda tashkil etilgan"
+  },
+  "ServicesPage": {
+    "title": "Xizmatlarimiz",
+    "web_development": "Veb dasturlash",
+    "mobile_development": "Mobil dasturlash",
+    "consulting": "Konsalting"
+  },
+  "ContactPage": {
+    "title": "Biz bilan bog'laning",
+    "name": "Ism",
+    "email": "Email",
+    "message": "Xabar",
+    "send": "Yuborish"
+  },
+  "Footer": {
+    "rights": "Barcha huquqlar himoyalangan",
+    "company": "Biznes kompaniyasi"
+  }
+}

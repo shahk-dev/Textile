@@ -1,0 +1,34 @@
+{
+  "Navigation": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "contact": "Contact"
+  },
+  "HomePage": {
+    "title": "Welcome to Business Company",
+    "description": "We help develop your business",
+    "cta": "Contact us"
+  },
+  "AboutPage": {
+    "title": "About Us",
+    "description": "Our company was founded in 2020"
+  },
+  "ServicesPage": {
+    "title": "Our Services",
+    "web_development": "Web Development",
+    "mobile_development": "Mobile Development",
+    "consulting": "Consulting"
+  },
+  "ContactPage": {
+    "title": "Contact Us",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send"
+  },
+  "Footer": {
+    "rights": "All rights reserved",
+    "company": "Business Company"
+  }
+}

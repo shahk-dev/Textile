@@ -1,0 +1,34 @@
+{
+  "Navigation": {
+    "home": "Главная",
+    "about": "О нас",
+    "services": "Услуги",
+    "contact": "Контакты"
+  },
+  "HomePage": {
+    "title": "Добро пожаловать в Бизнес Компанию",
+    "description": "Мы помогаем развивать ваш бизнес",
+    "cta": "Связаться с нами"
+  },
+  "AboutPage": {
+    "title": "О нас",
+    "description": "Наша компания была основана в 2020 году"
+  },
+  "ServicesPage": {
+    "title": "Наши услуги",
+    "web_development": "Веб-разработка",
+    "mobile_development": "Мобильная разработка",
+    "consulting": "Консалтинг"
+  },
+  "ContactPage": {
+    "title": "Связаться с нами",
+    "name": "Имя",
+    "email": "Email",
+    "message": "Сообщение",
+    "send": "Отправить"
+  },
+  "Footer": {
+    "rights": "Все права защищены",
+    "company": "Бизнес Компания"
+  }
+}
