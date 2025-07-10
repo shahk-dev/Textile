@@ -1,4 +1,5 @@
 import HeroSection from '@/components/sections/home/HeroSection';
+import NewsSection from '@/components/sections/home/NewsSection';
 
 export default function HomePage() {
     return (
@@ -7,9 +8,9 @@ export default function HomePage() {
       <HeroSection />
 
       {/* news section */}
-      {/* <div className="sm:pt-6">
+      <div className="sm:pt-6">
         <NewsSection />
-      </div> */}
+      </div>
 
       {/* services section */}
       {/* <ServiceSection /> */}

@@ -3,9 +3,9 @@ import Sidebar from "./Sidebar";
 
 export default function Header() {
     return (
-        <header>
+        <header className="sticky top-0 z-50">
             <div className="hidden sm:block">
-                <Navbar />
+                <Navbar /> 
             </div>
             <div className="sm:hidden">
                 <Sidebar />

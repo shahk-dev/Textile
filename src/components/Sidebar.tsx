@@ -14,7 +14,7 @@ export default function Sidebar() {
   const locale = useLocale();
 
   return (
-    <nav>
+    <nav className="bg-white">
       <div className="container">
         <div className="flex items-center flex-wrap gap-x-5 gap-y-2 py-2">
           <div className="flex items-center gap-4">

@@ -1,12 +1,11 @@
 
 import Image from "next/image";
-import React from "react";
 import { BsEye } from "react-icons/bs";
 
 interface cardType {
   data: {
     id: number;
-    image: string;
+    image: any;
     name: string;
     date: string;
     views: string;
@@ -21,8 +20,8 @@ export default function NewsCard({ data }: cardType) {
         <Image
           src={image}
           alt={name}
-          width={1920}
-          height={1280}
+          placeholder="blur"
+          loading="lazy"
           className="w-full h-full object-cover object-top"
         />
       </div>

@@ -1,21 +1,25 @@
+import card1 from '../../public/images/card1.jpg'
+import card2 from '../../public/images/card2.jpg'
+import card3 from '../../public/images/card3.jpg'
+
 export const contactData = [
   {
     id: 1,
-    image: "/images/card1.jpg",
+    image: card1,
     name: "This Article’s Title goes Here, but not too long.",
     date: "July 2, 2023",
     views: "24.5K",
   },
   {
     id: 2,
-    image: "/images/card2.jpg",
+    image: card2,
     name: "This Article’s Title goes Here, but not too long.",
     date: "July 2, 2023",
     views: "24.5K",
   },
   {
     id: 3,
-    image: "/images/card3.jpg",
+    image: card3,
     name: "This Article’s Title goes Here, but not too long.",
     date: "July 2, 2023",
     views: "24.5K",

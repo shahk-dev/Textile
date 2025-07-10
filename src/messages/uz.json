@@ -7,12 +7,15 @@
   },
   "HomePage": {
     "title": "ona va bola salomatlik markazi",
-    "description": "Biz sizning biznesingizni rivojlantirishda yordam beramiz",
+    "description": "“Respublika ixtisoslashtirilgan ona va bola salomatligi ilmiy-amaliy tibbiyot markazi” davlat muassasasi",
     "cta": "Biz bilan bog'lanish",
     "phone": "telefon",
     "time-title": "ish vaqti",
     "location-title": "bizning manzil",
-    "location": "Andijon shahar, Maybog'cha ko'chasi"
+    "location": "Andijon shahar, Maybog'cha ko'chasi",
+    "news-description": "yaxshi ma'lumot, yaxshi salomatlik",
+    "news-title": "Yangiliklar",
+    "news-btn": "Barcha yangiliklar"
   },
   "AboutPage": {
     "title": "Biz haqimizda",

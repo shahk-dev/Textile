@@ -13,7 +13,7 @@ function Card({
   subtitle: string;
 }) {
   return (
-    <div className="flex items-center justify-center gap-4 bg-white shadow-2xl p-2 rounded-md w-40 sm:w-52 h-16 md:h-26 md:w-64">
+    <div className="flex items-center justify-start gap-4 bg-white shadow-2xl py-2 px-4 rounded-md w-40 sm:w-52 h-16 md:h-26 md:w-80">
       <div className="w-6 md:w-8">
         <Image
           src={image}
@@ -30,12 +30,12 @@ function Card({
         {+subtitle.slice(1) ? (
           <a
             href={`tel:${subtitle}`}
-            className="text-sm md:text-lg text-blue-500"
+            className="text-sm md:text-lg text-blue-500 capitalize"
           >
             {subtitle}
           </a>
         ) : (
-          <p className="text-sm md:text-lg text-blue-500">{subtitle}</p>
+          <p className="text-sm md:text-lg text-blue-500 capitalize">{subtitle}</p>
         )}
       </div>
     </div>
@@ -48,10 +48,10 @@ export default function HeroSection() {
   return (
     <section className="hero bg-top-right sm:bg-top-center md:bg-top-left min-h-[375px] sm:min-h-[550px] py-8 flex items-center shadow-[inset_0_0_100vw_black] relative">
       <div className="container">
-        <h3 className="text-lg text-blue-500 uppercase font-bold tracking-wide font-geist">
+        <h3 className="text-lg text-blue-500 uppercase font-bold tracking-wide font-geist sm:max-w-1/2 md:max-w-1/3">
           {t("description")}
         </h3>
-        <h1 className="text-2xl sm:text-5xl text-blue-900 leading-[130%] font-medium max-w-[260px] sm:max-w-[520px]">
+        <h1 className="text-2xl sm:text-5xl text-blue-900 leading-[130%] font-medium max-w-[260px] sm:max-w-[520px] capitalize">
           {t("title")}
         </h1>
         <div className="mt-6 sm:mt-8">
