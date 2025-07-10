@@ -1,5 +1,8 @@
+import EmployeeSection from '@/components/sections/home/EmployeeSection';
 import HeroSection from '@/components/sections/home/HeroSection';
 import NewsSection from '@/components/sections/home/NewsSection';
+import ServiceSection from '@/components/sections/home/ServiceSection';
+import Contact from '@/components/shared/Contact';
 
 export default function HomePage() {
     return (
@@ -13,13 +16,13 @@ export default function HomePage() {
       </div>
 
       {/* services section */}
-      {/* <ServiceSection /> */}
+      <ServiceSection />
 
       {/* our doctors section */}
       {/* <EmployeeSection /> */}
 
       {/* contact section */}
-      {/* <Contact /> */}
+      <Contact />
     </>
   );
 }

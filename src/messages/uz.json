@@ -14,8 +14,13 @@
     "location-title": "bizning manzil",
     "location": "Andijon shahar, Maybog'cha ko'chasi",
     "news-description": "yaxshi ma'lumot, yaxshi salomatlik",
-    "news-title": "Yangiliklar",
-    "news-btn": "Barcha yangiliklar"
+    "news-title": "markaz yangiliklari",
+    "news-btn": "Barcha yangiliklar",
+    "service-description": "Siz ishonishingiz mumkin bo'lgan g'amxo'rlik",
+    "service-title": "bizning Xizmatlarimiz",
+    "checkout": "bepul ko'rik",
+    "cardio": "Kardiogramma",
+    "dna": "DNK testi"
   },
   "AboutPage": {
     "title": "Biz haqimizda",
