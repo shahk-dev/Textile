@@ -88,9 +88,8 @@ export const services = [
 ];
 
 export const navItems = [
-  { name: "Bosh Sahifa", url: "/", active: true },
-  { name: "Biz Haqimizda", url: "/about", active: false },
-  { name: "Xizmatlar", url: "/services", active: false },
-  { name: "Yangiliklar", url: "/news", active: false },
-  { name: "Aloqa", url: "/contact", active: false },
+  { name: "home", url: "/" },
+  { name: "about", url: "/about" },
+  { name: "news", url: "/news"},
+  { name: "contact", url: "/contact" },
 ];

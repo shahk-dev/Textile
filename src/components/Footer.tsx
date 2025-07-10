@@ -11,7 +11,7 @@ export default function Footer() {
         <div className="flex flex-col gap-y-12 py-12 sm:py-16 px-5">
           <div className="flex flex-wrap gap-y-5 justify-between items-start">
             <div className="flex flex-col gap-y-5 sm:gap-y-8">
-              <Logo />
+              <Logo size="w-24"/>
               <p className="text-white text-lg">
                 Leading the Way in Medical Execellence, Trusted Care.
               </p>

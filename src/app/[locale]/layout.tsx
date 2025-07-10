@@ -4,8 +4,8 @@ import { Roboto, Geist_Mono } from "next/font/google";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
-import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import Header from "@/components/Header";
 
 const roboto = Roboto({
   variable: "--font-roboto",
@@ -13,7 +13,7 @@ const roboto = Roboto({
 });
 
 const geist_mono = Geist_Mono({
-  variable: "--font-geist-mono",
+  variable: "--font-mono",
   subsets: ["latin"],
 });
 
@@ -38,7 +38,7 @@ export default async function LocaleLayout({
     <html lang={locale}>
       <body className={`${roboto.variable} ${geist_mono.variable} antialiased min-h-screen flex flex-col`}>
         <NextIntlClientProvider>
-          <Navbar />
+          <Header/>
           <main className="grow">{children}</main>
           <Footer />
         </NextIntlClientProvider>

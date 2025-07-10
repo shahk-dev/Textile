@@ -7,7 +7,7 @@ body {
 
 @theme {
   --font-roboto: roboto;
-  --font-geist_mono: geist;
+  --font-mono: geist;
   --color-blue-900: #1f2b6c;
   --color-blue-500: #159eec;
   --color-blue-400: #bfd2f8;

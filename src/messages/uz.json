@@ -2,13 +2,17 @@
   "Navigation": {
     "home": "Bosh sahifa",
     "about": "Biz haqimizda",
-    "services": "Xizmatlar",
+    "news": "Yangiliklar",
     "contact": "Aloqa"
   },
   "HomePage": {
-    "title": "Biznes kompaniyasiga xush kelibsiz",
+    "title": "ona va bola salomatlik markazi",
     "description": "Biz sizning biznesingizni rivojlantirishda yordam beramiz",
-    "cta": "Biz bilan bog'laning"
+    "cta": "Biz bilan bog'lanish",
+    "phone": "telefon",
+    "time-title": "ish vaqti",
+    "location-title": "bizning manzil",
+    "location": "Andijon shahar, Maybog'cha ko'chasi"
   },
   "AboutPage": {
     "title": "Biz haqimizda",

@@ -1,14 +1,30 @@
-import { useTranslations } from 'next-intl';
-import {Link} from '@/i18n/navigation';
+// import Contact from "../../components/shared/Contact";
+import Hero from "@/components/shared/Hero";
+// import AboutMain from "@/components/sections/about/AboutMain";
+// import EmployeeSection from "@/components/sections/home/EmployeeSection";
+// import NewsSection from "@/components/sections/home/NewsSection";
 
-export default function AboutPage() {
-    const t = useTranslations('AboutPage');
-    
-    return (
-        <div>
-            <h1 className="text-3xl font-bold mb-4">{t('title')}</h1>
-            <p className="text-lg">{t('description')}</p>
-            <Link href="/about">{t('about')}</Link>
-        </div>
-    );
+export default function About() { 
+  
+  return (
+    <div>
+
+      <div>
+        <Hero image="/images/about-hero.png">About Us</Hero>
+      </div>
+      <div>
+        {/* <AboutMain /> */}
+      </div>
+      <div>
+        {/* <EmployeeSection /> */}
+      </div>
+      <div>
+        {/* <NewsSection /> */}
+      </div>
+      <div>
+        {/* <Contact /> */}
+      </div>
+
+    </div>
+  );
 }
