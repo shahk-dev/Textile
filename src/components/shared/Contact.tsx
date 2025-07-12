@@ -2,7 +2,6 @@
 
 import { useTranslations } from "next-intl";
 import dynamic from "next/dynamic";
-import { LuPhoneCall } from "react-icons/lu";
 const Map = dynamic(() => import("@/components/Map"), { ssr: false });
 
 export default function Contact() {
@@ -20,14 +19,12 @@ export default function Contact() {
             <div className="grid grid-cols-[repeat(auto-fit,_minmax(200px,_1fr))] gap-5 mt-12 sm:mt-16">
               <div className="basis-[200px] grow bg-blue-400 h-[233px] rounded-md p-8 group hover:bg-blue-900 duration-300 cursor-pointer">
                 <div>
-                  <LuPhoneCall />
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="41"
                     height="39"
                     viewBox="0 0 41 39"
                     fill="none"
-                    className=""
                   >
                     <path
                       className="group-hover:stroke-white"
@@ -49,7 +46,7 @@ export default function Contact() {
                 </div>
                 <div className="mt-[14px]">
                   <h4 className="text-lg md:text-2xl text-blue-900 group-hover:text-white uppercase font-bold">
-                    telefon
+                    {t('phone')}
                   </h4>
                   <p className="sm:text-lg text-blue-500 font-medium mt-2 group-hover:text-white">
                     +998 91 611 11 96
@@ -85,13 +82,10 @@ export default function Contact() {
                 </div>
                 <div className="mt-[14px]">
                   <h4 className="text-lg md:text-2xl text-blue-900 group-hover:text-white uppercase font-bold">
-                    joylashuv
+                    {t('location-title')}
                   </h4>
                   <p className="sm:text-lg text-blue-500 font-medium mt-2 group-hover:text-white">
-                    Andijon
-                  </p>
-                  <p className="sm:text-lg text-blue-500 font-medium mt-[5px] group-hover:text-white">
-                    anywhere
+                    {t('location')}
                   </p>
                 </div>
               </div>
@@ -125,10 +119,10 @@ export default function Contact() {
                 </div>
                 <div className="mt-[14px]">
                   <h4 className="text-lg md:text-2xl text-blue-900 group-hover:text-white uppercase font-bold">
-                    email
+                    {t('email')}
                   </h4>
                   <p className="sm:text-lg text-blue-500 font-medium mt-2 group-hover:text-white">
-                    lorem ipsum
+                    test@gmail.com
                   </p>
                 </div>
               </div>
@@ -160,10 +154,10 @@ export default function Contact() {
                 </div>
                 <div className="mt-[14px]">
                   <h4 className="text-lg md:text-2xl text-blue-900 group-hover:text-white uppercase font-bold">
-                    ish vaqti
+                    {t("time-title")}
                   </h4>
                   <p className="sm:text-lg text-blue-500 font-medium mt-2 group-hover:text-white capitalize">
-                    24 soat - har kuni
+                    24/7
                   </p>
                 </div>
               </div>

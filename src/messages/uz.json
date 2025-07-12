@@ -22,8 +22,10 @@
     "cardio": "Kardiogramma",
     "dna": "DNK testi",
     "map-show": "google xaritada ochish",
-    "contact": "aloqa"
+    "contact": "aloqa",
+    "email": "Email"
   },
+
   "AboutPage": {
     "title": "Biz haqimizda",
     "description": "Bizning kompaniyamiz 2020 yilda tashkil etilgan"
