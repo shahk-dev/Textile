@@ -1,25 +1,26 @@
 'use client'
 
+import { useTranslations } from "next-intl";
 import dynamic from "next/dynamic";
+import { LuPhoneCall } from "react-icons/lu";
 const Map = dynamic(() => import("@/components/Map"), { ssr: false });
 
 export default function Contact() {
+  const t = useTranslations('HomePage');
   return (
     <>
       <section>
         <div className="container">
           <div className="mt-12 sm:mt-20">
             <div className="flex flex-col items-center gap-2">
-              <h3 className="text-sm sm:text-lg uppercase tracking-[2.2px] text-blue-500 font-bold">
-                Get in touch
-              </h3>
               <h2 className="text-2xl sm:text-[32px] text-blue-900 capitalize">
-                contact
+                {t("contact")}  
               </h2>
             </div>
             <div className="grid grid-cols-[repeat(auto-fit,_minmax(200px,_1fr))] gap-5 mt-12 sm:mt-16">
               <div className="basis-[200px] grow bg-blue-400 h-[233px] rounded-md p-8 group hover:bg-blue-900 duration-300 cursor-pointer">
                 <div>
+                  <LuPhoneCall />
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="41"

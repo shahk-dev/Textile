@@ -20,7 +20,9 @@
     "service-title": "bizning Xizmatlarimiz",
     "checkout": "bepul ko'rik",
     "cardio": "Kardiogramma",
-    "dna": "DNK testi"
+    "dna": "DNK testi",
+    "map-show": "google xaritada ochish",
+    "contact": "aloqa"
   },
   "AboutPage": {
     "title": "Biz haqimizda",
