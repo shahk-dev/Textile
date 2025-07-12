@@ -3,7 +3,11 @@
     "home": "Bosh sahifa",
     "about": "Biz haqimizda",
     "news": "Yangiliklar",
-    "contact": "Aloqa"
+    "contact": "Aloqa",
+    "phone": "telefon",
+    "location-title": "manzil",
+    "location": "Andijon shahar, Maybog'cha ko'chasi",
+    "duration": "ish vaqti"
   },
   "HomePage": {
     "title": "ona va bola salomatlik markazi",

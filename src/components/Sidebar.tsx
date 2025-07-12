@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import Logo from "./Logo";
@@ -15,7 +14,7 @@ export default function Sidebar() {
 
   return (
     <nav className="bg-white">
-      <div className="container">
+      {/* <div className="container">
         <div className="flex items-center flex-wrap gap-x-5 gap-y-2 py-2">
           <div className="flex items-center gap-4">
             <div>
@@ -76,7 +75,7 @@ export default function Sidebar() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className="bg-blue-900 py-2 relative">
         <div className="container">
