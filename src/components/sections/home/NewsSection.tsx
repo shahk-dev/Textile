@@ -12,10 +12,10 @@ export default function NewsSection() {
       <div className="container">
         <div className="mt-12 sm:mt-20">
           <div className="flex flex-col items-center gap-2">
-            <h3 className="text-sm sm:text-lg uppercase tracking-wide text-blue-500 font-bold">
+            <h3 className="text-sm sm:text-lg uppercase tracking-wide text-blue-500 font-semibold text-center">
               {t('news-description')}
             </h3>
-            <h2 className="text-2xl sm:text-4xl text-blue-900 capitalize">
+            <h2 className="text-2xl sm:text-4xl text-blue-900 uppercase font-bold text-center">
               {t('news-title')}
             </h2>
           </div>
