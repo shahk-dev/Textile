@@ -3,7 +3,6 @@ import NewsCard from "@/components/shared/NewsCard";
 import { contactData } from "@/utils/data";
 import { useLocale, useTranslations } from "next-intl";
 import Link from "next/link";
-import { BsArrowRight } from "react-icons/bs";
 
 export default function NewsSection() {
   const t = useTranslations("HomePage");
@@ -30,7 +29,6 @@ export default function NewsSection() {
         <div className="mt-8 flex items-center justify-center group">
           <Button styles="flex items-center gap-2">
             <Link href={`${locale}/news`}>{t('news-btn')}</Link>
-            <BsArrowRight size={18} className="group-hover:animate-pulse" />
           </Button>
         </div>
       </div>

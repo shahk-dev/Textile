@@ -31,8 +31,16 @@
   },
 
   "AboutPage": {
-    "title": "Biz haqimizda",
-    "description": "Bizning kompaniyamiz 2020 yilda tashkil etilgan"
+    "heading": "Biz haqimizda",
+    "description": "",
+    "experience": "50 yillik faoliyat tajribasi",
+    "experience-desc": "Vaqt bilan sinalgan yuqori sifatli tibbiy xizmat",
+    "amount-expert": "150 nafar mutaxassis",
+    "expert-desc": "Har yili malaka oshiradigan eng yaxshi shifokorlar",
+    "numbers-branch": "14 ta filial",
+    "branch-desc": "O'zingiz uchun eng qulay joyni tanlashingiz mumkin",
+    "amount-services": "1000 dan ortiq xizmatlar",
+    "service-desc": "Bizning ustuvor vazifamiz bemorlarimizning salomatligi va qulayligidir"
   },
   "ServicesPage": {
     "title": "Xizmatlarimiz",

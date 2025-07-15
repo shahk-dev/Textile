@@ -1,19 +1,21 @@
-import EmployeeSection from '@/components/sections/home/EmployeeSection';
-import HeroSection from '@/components/sections/home/HeroSection';
-import NewsSection from '@/components/sections/home/NewsSection';
-import ServiceSection from '@/components/sections/home/ServiceSection';
-import Contact from '@/components/shared/Contact';
+import AboutSection from "@/components/sections/home/AboutSection";
+import EmployeeSection from "@/components/sections/home/EmployeeSection";
+import HeroSection from "@/components/sections/home/HeroSection";
+import NewsSection from "@/components/sections/home/NewsSection";
+import ServiceSection from "@/components/sections/home/ServiceSection";
+import Contact from "@/components/shared/Contact";
 
 export default function HomePage() {
-    return (
+  return (
     <>
       {/* hero section */}
       <HeroSection />
 
       {/* news section */}
-      <div className="sm:pt-6">
-        <NewsSection />
-      </div>
+      <NewsSection />
+
+      {/* About section */}
+      <AboutSection />
 
       {/* services section */}
       <ServiceSection />
@@ -22,7 +24,7 @@ export default function HomePage() {
       {/* <EmployeeSection /> */}
 
       {/* contact section */}
-      <Contact />
+      {/* <Contact /> */}
     </>
   );
 }

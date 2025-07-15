@@ -7,7 +7,7 @@ body {
 
 @theme {
   --font-roboto: roboto;
-  --font-mono: geist;
+  --font-inter: inter;
   --color-blue-900: #1f2b6c;
   --color-blue-500: #159eec;
   --color-blue-400: #bfd2f8;
@@ -19,8 +19,6 @@ body {
   padding: 0 1rem;
 }
 
-.hero {
-  background-image: url("../../public/images/hero.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+p{
+  font-family: Inter, sans-serif !important;
 }

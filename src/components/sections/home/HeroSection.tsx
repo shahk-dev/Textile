@@ -2,6 +2,7 @@ import Button from "@/components/shared/Button";
 import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
+import hero from "../../../../public/images/hero-bg.png";
 
 function Card({
   image,
@@ -35,7 +36,9 @@ function Card({
             {subtitle}
           </a>
         ) : (
-          <p className="text-sm md:text-lg text-blue-500 capitalize">{subtitle}</p>
+          <p className="text-sm md:text-lg text-blue-500 capitalize">
+            {subtitle}
+          </p>
         )}
       </div>
     </div>
@@ -46,39 +49,27 @@ export default function HeroSection() {
   const t = useTranslations("HomePage");
   const locale = useLocale();
   return (
-    <section className="hero bg-top-right sm:bg-top-center md:bg-top-left min-h-[375px] sm:min-h-[550px] py-8 flex items-center shadow-[inset_0_0_100vw_black] relative">
-      <div className="container">
-        <h3 className="text-lg text-blue-500 uppercase font-bold tracking-wide font-geist sm:max-w-1/2 md:max-w-1/3">
-          {t("description")}
-        </h3>
-        <h1 className="text-2xl sm:text-5xl text-blue-900 leading-[130%] font-medium max-w-[260px] sm:max-w-[520px] capitalize">
-          {t("title")}
-        </h1>
-        <div className="mt-6 sm:mt-8">
-          <Link href={`/${locale}/contact`}>
-            <Button styles={"capitalize"}>{t("cta")}</Button>
-          </Link>
-        </div>
-      </div>
-
-      <div className="hidden sm:block w-full absolute bottom-0 left-0 translate-y-1/2">
-        <div className="container">
-          <div className="flex items-center justify-center gap-2 md:gap-10 lg:gap-20">
-            <Card
-              image="/icons/call.svg"
-              title={`${t("phone")}`}
-              subtitle="+998916111196"
-            />
-            <Card
-              image="/icons/time.svg"
-              title={t("time-title")}
-              subtitle="24/7"
-            />
-            <Card
-              image="/icons/location.svg"
-              title={t("location-title")}
-              subtitle={t("location")}
-            />
+    <section className="min-h-[80vh] relative">
+      <Image
+        src={hero}
+        alt="stuff image"
+        placeholder="blur"
+        loading="lazy"
+        fill
+        className="object-cover object-top"
+      />
+      <div className="absolute top-0 left-0 w-full h-full bg-[linear-gradient(179deg,_rgba(0,_193,_157,_0.00)_-25.42%,_rgba(2,_0,_67,_0.97)_107.11%)] py-12">
+        <div className="container flex flex-col items-center justify-end gap-4 h-full">
+          <h1 className="text-3xl sm:text-6xl text-white leading-[120%] font-bold uppercase text-center break-words">
+            {t("title")}
+          </h1>
+          <p className="sm:text-lg md:text-xl text-white/80 font-medium tracking-wide lg:max-w-1/2 text-center">
+            {t("description")}
+          </p>
+          <div className="mt-6 sm:mt-8">
+            <Link href={`/${locale}/contact`}>
+              <Button styles={"flex items-center gap-2"}>{t("cta")}</Button>
+            </Link>
           </div>
         </div>
       </div>

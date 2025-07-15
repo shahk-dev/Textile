@@ -10,7 +10,7 @@ export default function Contact() {
     <>
       <section>
         <div className="container">
-          <div className="mt-12 sm:mt-20">
+          {/* <div className="mt-12 sm:mt-20">
             <div className="flex flex-col items-center gap-2">
               <h2 className="text-2xl sm:text-[32px] text-blue-900 capitalize">
                 {t("contact")}  
@@ -162,7 +162,7 @@ export default function Contact() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
 
           <div className="mt-6 sm:mt-12">
             <Map/>

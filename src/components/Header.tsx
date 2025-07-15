@@ -4,8 +4,8 @@ import Topbar from "./Topbar";
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-50 bg-white">
-      <Topbar />
+    <header className="sticky top-0 z-[1000] bg-white">
+      <Topbar/>
       <div className="hidden sm:block">
         <Navbar />
       </div>

@@ -14,69 +14,6 @@ export default function Sidebar() {
 
   return (
     <nav className="bg-white">
-      {/* <div className="container">
-        <div className="flex items-center flex-wrap gap-x-5 gap-y-2 py-2">
-          <div className="flex items-center gap-4">
-            <div>
-              <Image
-                src={"/icons/call.svg"}
-                alt="call icon"
-                width={26}
-                height={26}
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div>
-              <h4 className="text-sm text-blue-900 uppercase font-medium">
-                telefon
-              </h4>
-              <p className="text-sm text-blue-500 font-medium">
-                +998 91 611 11 96
-              </p>
-            </div>
-          </div>
-
-          <div className="flex items-center gap-4">
-            <div>
-              <Image
-                src={"/icons/time.svg"}
-                alt="call icon"
-                width={24}
-                height={24}
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div>
-              <h4 className="text-sm text-blue-900 uppercase font-medium">
-                ish vaqti
-              </h4>
-              <p className="text-sm text-blue-500 font-medium capitalize">
-                09:00 - 20:00 - har kuni
-              </p>
-            </div>
-          </div>
-          <div className="flex items-center gap-4">
-            <div>
-              <Image
-                src={"/icons/location.svg"}
-                alt="call icon"
-                width={24}
-                height={24}
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div>
-              <h4 className="text-sm text-blue-900 uppercase font-medium">
-                Manzil
-              </h4>
-              <p className="text-sm text-blue-500 font-medium">
-                0123 Some Place
-              </p>
-            </div>
-          </div>
-        </div>
-      </div> */}
-
       <div className="bg-blue-900 py-2 relative">
         <div className="container">
           <div className="flex items-center justify-between">
