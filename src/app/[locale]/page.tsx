@@ -21,10 +21,10 @@ export default function HomePage() {
       <ServiceSection />
 
       {/* our doctors section */}
-      {/* <EmployeeSection /> */}
+      <EmployeeSection />
 
       {/* contact section */}
-      {/* <Contact /> */}
+      <Contact /> 
     </>
   );
 }
