@@ -13,6 +13,29 @@ export default function AboutSection() {
             {t("heading")}
           </h2>
 
+          <div className="text-lg sm:text-xl mt-12 sm:mt-16">
+            <p>
+              <span className="font-bold">{t("respublika")}</span>{" "}
+              {t("davlat-muassasasi")}
+            </p>
+
+            <p className="mt-8">{t("markazda-ilmiy")}</p>
+
+            <p className="mt-8">{t("respublika-viloyatlari")}</p>
+
+            <h4 className="mt-8 font-bold text-2xl">
+              {t("markaz-vazifalari")}:
+            </h4>
+            <ul className="px-5 mt-5 flex flex-col gap-2">
+              <li className="list-disc">{t("v1")}</li>
+              <li className="list-disc">{t("v2")}</li>
+              <li className="list-disc">{t("v3")}</li>
+              <li className="list-disc">{t("v4")}</li>
+            </ul>
+
+            <p className="mt-8">{t("sertifikat-yili")}</p>
+          </div>
+
           <div className="grid grid-cols-[repeat(auto-fit,_minmax(200px,_1fr))] gap-5 mt-12 sm:mt-16">
             <div className="bg-blue-400 rounded-md p-8 group hover:bg-blue-900 duration-300 cursor-pointer flex flex-col items-center">
               <div>

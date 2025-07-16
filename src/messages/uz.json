@@ -40,7 +40,17 @@
     "numbers-branch": "14 ta filial",
     "branch-desc": "O'zingiz uchun eng qulay joyni tanlashingiz mumkin",
     "amount-services": "1000 dan ortiq xizmatlar",
-    "service-desc": "Bizning ustuvor vazifamiz bemorlarimizning salomatligi va qulayligidir"
+    "service-desc": "Bizning ustuvor vazifamiz bemorlarimizning salomatligi va qulayligidir",
+    "respublika": "Respublika ixtisoslashtirilgan ona va bola salomatligi ilmiy-amaliy tibbiyot markazi",
+    "davlat-muassasasi": "davlat muassasasi O‘zbekiston Respublikasi onalik va bolalikni muhofaza qilish xizmatining asosiy muassasasi bo‘lib, respublika ahamiyatiga ega ixtisoslashtirilgan tibbiyot muassasasi bo‘lib, ilmiy-amaliy tibbiyot majmuasini ifodalaydi.",
+    "markazda-ilmiy": "Markazda ilmiy, tibbiy-diagnostika, o‘quv, ma'muriy va boshqa bo‘limlar mavjud.",
+    "respublika-viloyatlari": "Respublika viloyatlari va Toshkent shahrida Markazning 14 ta filiali faoliyat ko‘rsatmoqda.",
+    "markaz-vazifalari": "Markazning asosiy vazifalari",
+    "v1": "ayollar va yangi tug'ilgan chaqaloqlarga yuqori texnologiyali ixtisoslashtirilgan yordam ko'rsatish",
+    "v2": "fundamental, amaliy va innovatsion ilmiy tadqiqotlar o'tkazish",
+    "v3": "onalik va bolalikni muhofaza qilish sohasida tibbiyot kadrlarini tayyorlash va qayta tayyorlash",
+    "v4": "milliy klinik protokollar va davolash va diagnostika standartlarini ishlab chiqish",
+    "sertifikat-yili": "2022-yilda Markaz sog‘liqni saqlash sifati bo‘yicha xalqaro akkreditatsiyadan muvaffaqiyatli o‘tgan O‘zbekistondagi birinchi davlat tibbiyot muassasasi bo‘lib, Xalqaro sifat sertifikatiga ega bo‘ldi."
   },
   "ServicesPage": {
     "title": "Xizmatlarimiz",

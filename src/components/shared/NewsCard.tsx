@@ -17,7 +17,7 @@ export default function NewsCard({ data }: cardType) {
   const locale = useLocale();
   const { image, name, date, views, id } = data;
   return (
-    <Link href={`${locale}/news/:${id}`}>
+    <Link href={`${locale}/news/${id}`}>
       <div className="bg-white cursor-pointer grow shadow hover:scale-[1.01] duration-200 rounded-2xl overflow-hidden">
         <div className="h-[300px] md:h-[400px]">
           <Image
