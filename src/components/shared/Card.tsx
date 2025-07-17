@@ -22,10 +22,10 @@ export default function Card({
         }
       </div>
       <div className="p-4 text-center bg-white h-[150px]">
-        <p className="text-lg">
+        <p className="md:text-lg">
           {name}
         </p>
-        <h2 className="text-lg font-medium tracking-wide">
+        <h2 className="md:text-lg font-medium tracking-wide">
           {job}
         </h2>
       </div>
