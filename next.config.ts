@@ -8,7 +8,7 @@ const nextConfig: NextConfig = {
             {
                 protocol: "https",
                 hostname: "perinatal.zumaredu.uz",
-                pathname: "**",
+                pathname: "/**",
             },
         ],
     },
