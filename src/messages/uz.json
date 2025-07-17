@@ -9,6 +9,14 @@
     "location": "Andijon shahar, Maybog'cha ko'chasi",
     "duration": "ish vaqti"
   },
+
+  "Map": {
+    "loading": "yuklanmoqda...",
+    "map-show": "google xaritada ochish",
+    "manzil-topilmadi": "Manzil topilmadi",
+    "yuklashda-xatolik": "Manzilni yuklashda xatolik"
+  },
+
   "HomePage": {
     "title": "ona va bola salomatlik markazi",
     "description": "“Respublika ixtisoslashtirilgan ona va bola salomatligi ilmiy-amaliy tibbiyot markazi” davlat muassasasi",
@@ -25,11 +33,11 @@
     "checkout": "bepul ko'rik",
     "cardio": "Kardiogramma",
     "dna": "DNK testi",
-    "map-show": "google xaritada ochish",
     "contact": "aloqa",
     "email": "Email",
     "employee-heading": "Xodimlar",
-    "employee-desc": "Ishonchli g‘amxo‘rlik"
+    "employee-desc": "Ishonchli g‘amxo‘rlik",
+    "employees-btn": "Barcha xodimlar"
   },
 
   "AboutPage": {

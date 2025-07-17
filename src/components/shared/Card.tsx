@@ -10,21 +10,22 @@ export default function Card({
   job: string;
 }) {
   return (
-    <div className="rounded-md overflow-hidden group cursor-pointer">
-      <div className="h-[350px] w-full">
-        <Image
-          src={image}
-          alt={name}
-          width={1920}
-          height={1280}
-          className="w-full h-full object-cover object-top"
-        />
+    <div className="rounded-2xl overflow-hidden cursor-pointer flex flex-col h-[500px] shadow hover:scale-[1.01] duration-200">
+      <div className="grow relative h-[350px]">
+        {
+          image ? <Image
+            src={`https://perinatal.zumaredu.uz${image}`}
+            alt={name || 'card image'}
+            fill
+            className="w-full h-full z-10"
+          /> : <div className="w-full h-full bg-blue-400 flex items-center justify-center">No image</div>
+        }
       </div>
-      <div className="py-6 text-center bg-blue-900 group-hover:bg-blue-400 duration-300">
-        <p className="text-lg group-hover:text-blue-900 text-blue-400">
+      <div className="p-4 text-center bg-white h-[150px]">
+        <p className="text-lg">
           {name}
         </p>
-        <h2 className="text-lg font-bold uppercase tracking-[2px] group-hover:text-blue-900 text-blue-400">
+        <h2 className="text-lg font-medium tracking-wide">
           {job}
         </h2>
       </div>

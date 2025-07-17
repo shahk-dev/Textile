@@ -5,9 +5,10 @@ import Autoplay from 'embla-carousel-autoplay';
 
 interface EmblaCarouselProps {
     children: ReactNode,
+    length: number
 }
 
-export default function Slider({ children }: EmblaCarouselProps) {
+export default function Slider({ children, length }: EmblaCarouselProps) {
 
     const autoplay = useRef(
         Autoplay({ delay: 5000, stopOnInteraction: false, stopOnMouseEnter: true })
@@ -44,21 +45,22 @@ export default function Slider({ children }: EmblaCarouselProps) {
     return (
         <div>
             <div className="overflow-hidden" ref={emblaRef}>
-                <div className="flex">
+                <div className="flex py-5">
                     {children}
                 </div>
             </div>
 
-            <div className="flex justify-center mt-4 gap-2">
-                {scrollSnaps.map((_, index) => (
-                    <button
-                        key={index}
-                        onClick={() => scrollTo(index)}
-                        className={`cursor-pointer h-2 w-2 rounded-full ${index === selectedIndex ? 'bg-blue-900' : 'bg-blue-400'
-                            }`}
-                    />
-                ))}
-            </div>
+            {
+                length > 3 && <div className="flex justify-center mt-4 gap-2">
+                    {scrollSnaps.map((_, index) => (
+                        <button
+                            key={index}
+                            onClick={() => scrollTo(index)}
+                            className={`cursor-pointer h-2 w-2 rounded-full ${index === selectedIndex ? 'bg-blue-900' : 'bg-blue-400'
+                                }`}
+                        />
+                    ))}
+                </div>}
         </div>
     );
 }

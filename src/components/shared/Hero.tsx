@@ -1,6 +1,5 @@
 "use client";
 import { ReactNode } from 'react';
-import Image from 'next/image';
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -52,13 +51,6 @@ export default function Hero({
                         </h1>
                     </div>
                 </div>
-                <Image
-                    src="/images/heroimg.png"
-                    alt="hero"
-                    width={1920}
-                    height={1280}
-                    className="w-full h-full object-cover object-top"
-                />
             </section>
         </div>
     );

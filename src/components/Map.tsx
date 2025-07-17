@@ -30,8 +30,10 @@ function MarkerWithPopup({ address }: { address: string }) {
 }
 
 export default function Map() {
-  const [address, setAddress] = useState("Yuklanmoqda...");
-  const t = useTranslations("HomePage");
+  const t = useTranslations("Map");
+  const [address, setAddress] = useState(t('loading'));
+
+
 
   useEffect(() => {
     fetch(
@@ -39,10 +41,10 @@ export default function Map() {
     )
       .then((res) => res.json())
       .then((data) => {
-        setAddress(data.display_name || "Manzil topilmadi");
+        setAddress(data.display_name || t("manzil-topilmadi"));
       })
       .catch(() => {
-        setAddress("Manzilni yuklashda xatolik");
+        setAddress(t('yuklashda-xatolik'));
       });
   }, []);
 
