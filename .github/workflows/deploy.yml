@@ -31,4 +31,4 @@ jobs:
           username: ${{ secrets.VPS_USER }}
           key: ${{ secrets.SSH_KEY }}
           source: ".next/**,public/**,package.json,ecosystem.config.js"
-          target: "/home/ubuntu/perinatal"
+          target: "/var/www/perinatal.zumaredu.uz"
