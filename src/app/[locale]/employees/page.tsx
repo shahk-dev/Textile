@@ -91,7 +91,7 @@ export default function page() {
                 <h2 className="text-2xl sm:text-4xl text-blue-900 uppercase font-bold text-center">
                     {t('employee-heading')}
                 </h2>
-                <div className="flex items-center gap-4 flex-wrap mt-12 sm:mt-16">
+                <div className="flex items-center gap-4 flex-wrap mt-6 md:mt-12">
                     {
                         loading ? <Loading /> : departmentBtns?.map(item => {
                             const displayName = locale === 'ru' ? item.name_ru : item.name;
@@ -108,8 +108,8 @@ export default function page() {
                         })
                     }
                 </div>
-                <div className="flex justify-center mt-12 sm:mt-16">{filteredEmployees.length === 0 && (locale === 'ru' ? 'В этом отделе нет сотрудников!' : 'Bu Bo\'limda xodimlar mavjud emas!')}</div>
-                <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 md:gap-5 mt-12 sm:mt-16'>
+                <div className="flex justify-center mt-6">{filteredEmployees.length === 0 && (locale === 'ru' ? 'В этом отделе нет сотрудников!' : 'Bu Bo\'limda xodimlar mavjud emas!')}</div>
+                <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 md:gap-5 mt-6 sm:mt-12'>
                     {
                         filteredEmployees?.map((item) => {
                             return (
