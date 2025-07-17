@@ -1,4 +1,4 @@
-name: Deploy to VPS
+name: Deploy Next.js to VPS
 
 on:
   push:
@@ -19,9 +19,9 @@ jobs:
           node-version: '20'
 
       - name: 📚 Install dependencies
-        run: npm ci
+        run: npm install
 
-      - name: 🏗️ Build Vite project
+      - name: 🏗️ Build Next.js app
         run: npm run build
 
       - name: 🚀 Deploy to VPS via SSH
@@ -29,6 +29,6 @@ jobs:
         with:
           host: ${{ secrets.VPS_HOST }}
           username: ${{ secrets.VPS_USER }}
-          key: ${{ secrets.VPS_SSH_KEY }}
-          source: "dist/*"
-          target: "/var/www/perinatal.zumaredu.uz"
+          key: ${{ secrets.SSH_KEY }}
+          source: ".next/**,public/**,package.json,ecosystem.config.js"
+          target: "/home/ubuntu/perinatal"
