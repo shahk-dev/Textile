@@ -28,7 +28,9 @@
     "dna": "ДНК-тест",
     "map-show": "открыть на карте Google",
     "contact": "контакт",
-    "email": "электронная почта"
+    "email": "электронная почта",
+    "employee-heading": "СОТРУДНИКИ",
+    "employee-desc": "Доверенная забота"
   },
   
   "AboutPage": {

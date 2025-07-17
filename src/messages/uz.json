@@ -27,7 +27,9 @@
     "dna": "DNK testi",
     "map-show": "google xaritada ochish",
     "contact": "aloqa",
-    "email": "Email"
+    "email": "Email",
+    "employee-heading": "Xodimlar",
+    "employee-desc": "Ishonchli g‘amxo‘rlik"
   },
 
   "AboutPage": {
