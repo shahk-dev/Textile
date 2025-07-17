@@ -10,14 +10,14 @@ export default function Card({
   job: string;
 }) {
   return (
-    <div className="rounded-2xl overflow-hidden cursor-pointer flex flex-col h-[500px] shadow hover:scale-[1.01] duration-200">
+    <div className="rounded-2xl overflow-hidden cursor-pointer flex flex-col h-[550px] shadow hover:scale-[1.01] duration-200">
       <div className="grow relative h-[350px]">
         {
           image ? <Image
             src={`https://perinatal.zumaredu.uz${image}`}
             alt={name || 'card image'}
             fill
-            className="w-full h-full z-10"
+            className="w-full h-full z-10 object-cover object-top"
           /> : <div className="w-full h-full bg-blue-400 flex items-center justify-center">No image</div>
         }
       </div>

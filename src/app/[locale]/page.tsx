@@ -24,7 +24,7 @@ export default function HomePage() {
       <EmployeeSection />
 
       {/* contact section */}
-      {/* <Contact />  */}
+      <Contact /> 
     </>
   );
 }

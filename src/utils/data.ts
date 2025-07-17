@@ -97,3 +97,26 @@ export const navItems = [
   { name: "news", url: "/news"},
   { name: "contact", url: "/contact" },
 ];
+
+// interfaces
+export interface Department {
+    id: number;
+    name: string;
+    name_ru: string;
+}
+
+export interface Employee {
+    id: number;
+    full_name: string;
+    full_name_ru: string;
+    about: string;
+    about_ru: string;
+    experience: number;
+    departments: Department[];
+    image: string;
+}
+
+export interface EmployeesResponse {
+    items: Employee[];
+    count: number;
+}

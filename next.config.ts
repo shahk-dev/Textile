@@ -3,7 +3,14 @@ import createNextIntlPlugin from 'next-intl/plugin';
 
 const nextConfig: NextConfig = {
     images: {
-        domains: ['perinatal.zumaredu.uz'],
+        domains: ["perinatal.zumaredu.uz"],
+        remotePatterns: [
+            {
+                protocol: "https",
+                hostname: "perinatal.zumaredu.uz",
+                pathname: "**",
+            },
+        ],
     },
     reactStrictMode: true,
 };
