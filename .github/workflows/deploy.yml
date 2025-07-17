@@ -13,22 +13,23 @@ jobs:
       - name: 📥 Checkout code
         uses: actions/checkout@v3
 
-      - name: 📦 Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '20'
-
-      - name: 📚 Install dependencies
-        run: npm install
-
-      - name: 🏗️ Build Next.js app
-        run: npm run build
-
-      - name: 🚀 Deploy to VPS via SSH
-        uses: appleboy/scp-action@v0.1.4
+      - name: Copy files to VPS
+        uses: appleboy/scp-action@master
         with:
           host: ${{ secrets.VPS_HOST }}
           username: ${{ secrets.VPS_USER }}
           key: ${{ secrets.SSH_KEY }}
-          source: ".next/**,public/**,package.json,ecosystem.config.js"
-          target: "/var/www/perinatal.zumaredu.uz"
+          source: "."
+          target: "/home/${{ secrets.VPS_USER }}/projects/perinatal-center-front"
+
+      - name: Run deploy script on VPS
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.VPS_HOST }}
+          username: ${{ secrets.VPS_USER }}
+          key: ${{ secrets.SSH_KEY }}
+          script: |
+            cd ~/projects/perinatal-center-front
+            npm i
+            npm run build
+            pm2 restart perinatal-app
