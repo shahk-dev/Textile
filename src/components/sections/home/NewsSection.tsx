@@ -1,12 +1,38 @@
+"use client"
+
 import Button from "@/components/shared/Button";
+import Loading from "@/components/shared/Loading";
 import NewsCard from "@/components/shared/NewsCard";
-import { contactData } from "@/utils/data";
 import { useLocale, useTranslations } from "next-intl";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 export default function NewsSection() {
   const t = useTranslations("HomePage");
   const locale = useLocale();
+
+  const [news, setNews] = useState<any>([]);
+  const [loading, setLoading] = useState<boolean>(true);
+
+  useEffect(() => {
+    const fetchEmployees = async () => {
+      try {
+        const res = await fetch('https://perinatal.zumaredu.uz/api/v1/news?limit=100&offset=0');
+        if (!res.ok) {
+          throw new Error(`HTTP error! status: ${res.status}`);
+        }
+        const data = await res.json();
+        setNews(data.items);
+      } catch (err: any) {
+        console.error(err);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchEmployees();
+  }, []);
+
   return (
     <section>
       <div className="container">
@@ -19,12 +45,14 @@ export default function NewsSection() {
               {t('news-title')}
             </h2>
           </div>
-
-          <div className="mt-12 sm:mt-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
-            {contactData.slice(0, 3).map((data) => (
+          {
+            loading ? <Loading /> : 
+            <div className="mt-12 sm:mt-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
+            {news.slice(0, 3).map((data:any) => (
               <NewsCard key={data.id} data={data} />
             ))}
           </div>
+          }
         </div>
         <div className="mt-8 flex items-center justify-center group">
           <Button styles="flex items-center gap-2">
