@@ -17,6 +17,7 @@ export default function Card({
             src={`https://perinatal.zumaredu.uz${image}`}
             alt={name || 'card image'}
             fill
+            sizes="100%"
             className="w-full h-full z-10 object-cover object-top"
           /> : <div className="w-full h-full bg-blue-400 flex items-center justify-center">No image</div>
         }

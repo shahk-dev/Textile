@@ -16,7 +16,6 @@ export default function EmployeeSection() {
     const locale = useLocale();
     const [employees, setEmployees] = useState<Employee[]>([]);
     const [loading, setLoading] = useState<boolean>(true);
-    const [error, setError] = useState<string | null>(null);
 
     useEffect(() => {
         const fetchEmployees = async () => {
@@ -29,7 +28,6 @@ export default function EmployeeSection() {
                 setEmployees(data.items);
             } catch (err: any) {
                 console.error(err);
-                setError(err.message || 'Server error');
             } finally {
                 setLoading(false);
             }
@@ -37,9 +35,6 @@ export default function EmployeeSection() {
 
         fetchEmployees();
     }, []);
-
-
-    if (error) return <div className="text-red-500">Xato: {error}</div>;
 
 
     return (

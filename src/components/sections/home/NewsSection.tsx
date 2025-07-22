@@ -46,12 +46,12 @@ export default function NewsSection() {
             </h2>
           </div>
           {
-            loading ? <Loading /> : 
-            <div className="mt-12 sm:mt-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
-            {news.slice(0, 3).map((data:any) => (
-              <NewsCard key={data.id} data={data} />
-            ))}
-          </div>
+            loading ? <Loading /> :
+              <div className="mt-12 sm:mt-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
+                {news.slice(0, 3).map((data: any) => (
+                  <NewsCard key={data.id} data={data} />
+                ))}
+              </div>
           }
         </div>
         <div className="mt-8 flex items-center justify-center group">
