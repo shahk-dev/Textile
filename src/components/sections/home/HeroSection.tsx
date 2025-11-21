@@ -2,7 +2,7 @@ import Button from "@/components/shared/Button";
 import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
-import hero from "../../../../public/images/hero-bg.png";
+import hero from "../../../../public/images/home.png";
 
 function Card({
   image,
@@ -49,7 +49,7 @@ export default function HeroSection() {
   const t = useTranslations("HomePage");
   const locale = useLocale();
   return (
-    <section className="min-h-[80vh] relative">
+    <section className="min-h-[83vh] ">
       <Image
         src={hero}
         alt="stuff image"
@@ -58,7 +58,7 @@ export default function HeroSection() {
         fill
         className="object-cover object-top"
       />
-      <div className="absolute top-0 left-0 w-full h-full bg-[linear-gradient(179deg,_rgba(0,_193,_157,_0.00)_-25.42%,_rgba(2,_0,_67,_0.97)_107.11%)] py-12">
+      <div className="absolute top-0 left-0 w-full h-full  py-12">
         <div className="container flex flex-col items-center justify-end gap-4 h-full">
           <h1 className="text-3xl sm:text-6xl text-white leading-[120%] font-bold uppercase text-center break-words">
             {t("title")}

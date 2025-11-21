@@ -1,14 +1,12 @@
 {
   "Navigation": {
     "home": "Bosh sahifa",
-    "about": "Biz haqimizda",
-    "news": "Yangiliklar",
-    "contact": "Aloqa",
-    "phone": "telefon",
-    "price": "Narxlar",
-    "location-title": "manzil",
-    "location": "Andijon shahar, Maybog'cha ko'chasi",
-    "duration": "ish vaqti"
+    "about": "Kompaniya",
+    "news": "Fabrikalar",
+    "contact": "Mahsulotlar",
+    "phone": "Galareya",
+    "price": "Buyurtma",
+    "location-title": "Vakansiyalar"
   },
 
   "Map": {

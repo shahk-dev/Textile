@@ -16,7 +16,7 @@ export default function LanguageSwitcher() {
 
     return (
         <div className="flex space-x-2">
-            {['uz', 'ru'].map((lang) => (
+            {['uz', 'ru' , 'en'].map((lang) => (
                 <button
                     key={lang}
                     onClick={() => handleLanguageChange(lang)}

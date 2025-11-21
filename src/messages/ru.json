@@ -1,22 +1,14 @@
 {
   "Navigation": {
-    "home": "Главная",
-    "about": "О нас",
-    "news": "Новости",
-    "contact": "Контакты",
-    "phone": "телефон",
-    "price": "Цены",
-    "location-title": "локация",
-    "location": "улица Майбогча, Шурбулак, Андижан",
-    "duration": "время работы"
+    "home": "Домашняя страница",
+    "about": "Компания",
+    "news": "Заводы",
+    "contact": "Продукты",
+    "phone": "Галерея",
+    "price": "Заказ",
+    "location-title": "Вакансии"
   },
 
-  "Map": {
-    "loading": "загрузка...",
-    "map-show": "открыть на карте Google",
-    "manzil-topilmadi": "Адрес не найден",
-    "yuklashda-xatolik": "Ошибка загрузки адреса"
-  },
 
   "HomePage": {
     "title": "центр здоровья матери и ребенка",

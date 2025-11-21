@@ -96,7 +96,9 @@ export const navItems = [
   { name: "about", url: "/about" },
   { name: "news", url: "/news"},
   { name: "price", url: "/price"},
-  { name: "contact", url: "/contact" },
+  { name: "phone", url: "/contact" },
+  { name: "price", url: "/contact" },
+  { name: "location-title", url: "/contact" }
 ];
 
 // interfaces

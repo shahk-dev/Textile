@@ -20,7 +20,7 @@ export default function EmployeeSection() {
     useEffect(() => {
         const fetchEmployees = async () => {
             try {
-                const res = await fetch('https://perinatal.zumaredu.uz/api/v1/employees?limit=100&offset=0');
+                const res = await fetch('');
                 if (!res.ok) {
                     throw new Error(`HTTP error! status: ${res.status}`);
                 }
