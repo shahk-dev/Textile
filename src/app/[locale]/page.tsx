@@ -11,18 +11,12 @@ export default function HomePage() {
       <HeroSection />
 
       {/* news section */}
-      <NewsSection />
 
       {/* About section */}
       <AboutSection />
 
       {/* services section */}
       <ServiceSection />
-
-      {/* our doctors section */}
-      <EmployeeSection />
-
-      {/* contact section */}
     </>
   );
 }
