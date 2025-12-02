@@ -94,6 +94,6 @@ If you like this project, give it a **star** on GitHub — it helps a lot!
 
 ---
 
-**Author:** Your Name
+**Author:** Turg'unboyov Shakhriyor
 
 For any questions or suggestions, feel free to reach out!
